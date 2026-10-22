@@ -1,0 +1,110 @@
+{
+ "date": "2026-10-22",
+ "sources": {
+  "segall": {
+   "url": "https://www.officialasvab.com/wp-content/uploads/2019/08/1997score_scale.pdf",
+   "http": 200,
+   "etat": "ok (PDF joignable)"
+  },
+  "oa-scores": {
+   "url": "https://www.officialasvab.com/applicants/scores/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-scoring": {
+   "url": "https://www.officialasvab.com/researchers/scores/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-eligibility": {
+   "url": "https://www.officialasvab.com/recruiters/enlistment-eligibility/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-faqs": {
+   "url": "https://www.officialasvab.com/applicants/faqs/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-retest": {
+   "url": "https://www.officialasvab.com/recruiters/asvab-retest-policy/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-picat": {
+   "url": "https://www.officialasvab.com/recruiters/picat/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-apt": {
+   "url": "https://www.officialasvab.com/recruiters/afqt-predictor-test/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-factsheet": {
+   "url": "https://www.officialasvab.com/recruiters/fact-sheet/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-myths": {
+   "url": "https://www.officialasvab.com/recruiters/myths/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "oa-samples": {
+   "url": "https://www.officialasvab.com/applicants/sample-questions/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "army": {
+   "url": "https://www.goarmy.com/how-to-join/steps/asvab",
+   "http": 200,
+   "etat": "ok"
+  },
+  "airforce": {
+   "url": "https://www.airforce.com/asvab",
+   "http": 200,
+   "etat": "ok"
+  },
+  "af-careers": {
+   "url": "https://www.airforce.com/careers",
+   "http": 200,
+   "etat": "ok"
+  },
+  "marines": {
+   "url": "https://www.marines.com/become/requirements.html",
+   "http": 200,
+   "etat": "ok"
+  },
+  "coastguard": {
+   "url": "https://www.gocoastguard.com/get-started",
+   "http": 200,
+   "etat": "ok"
+  },
+  "spaceforce": {
+   "url": "https://www.spaceforce.com/how-to-join/enlisted-guardians",
+   "http": 200,
+   "etat": "ok"
+  },
+  "usc520": {
+   "url": "https://www.law.cornell.edu/uscode/text/10/520",
+   "http": 200,
+   "etat": "ok"
+  },
+  "army-ocs-hi": {
+   "url": "https://dod.hawaii.gov/hiarng/recruiting-and-retention/ocs/",
+   "http": 200,
+   "etat": "ok"
+  },
+  "army-ocs-mn": {
+   "url": "https://mn.gov/mnng/careers/officer-careers.jsp",
+   "http": 200,
+   "etat": "ok"
+  }
+ },
+ "af-jobs": {
+  "avant": 118,
+  "apres": 118,
+  "etat": "ok"
+ }
+}

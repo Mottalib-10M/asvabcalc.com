@@ -1,0 +1,47 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import LegalIdentity from './LegalIdentity.astro';
+import { CONTACT_EMAIL } from '../data/site-config';
+import { route, type Locale } from '../i18n/routes';
+import { contactPageSchema } from '../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const path = route('contact', lang);
+const description = es
+  ? 'Escriba al editor de Puntaje para Alistarse sobre una cifra del ASVAB 2026, un mínimo de rama o una fuente. Solo por correo: sin formulario, sin cuenta y sin reclutadores.'
+  : 'Write to the publisher of Score to Enlist about a 2026 ASVAB figure, a branch minimum or a source. Email only: no form, no account, and nothing passed on to recruiters.';
+---
+<PageLayout title={es ? 'Contacto de Puntaje para Alistarse 2026: correcciones' : 'Contact Score to Enlist 2026: corrections and sources'} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: es ? 'Contacto' : 'Contact', description, path, lang })]} breadcrumbs={[{ label: es ? 'Contacto' : 'Contact' }]} showAuthor={false}>
+  <div class="prose prose-slate max-w-none">
+    {es ? <>
+      <h1>Contacto</h1>
+      <p>Escriba a <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. No hay formulario, ni teléfono, ni cuenta: una sola dirección, leída por quienes mantienen las calculadoras.</p>
+      <h2>Mensajes que ayudan</h2>
+      <ul>
+        <li>Un mínimo de rama que cambió en su sitio oficial: indique la rama y el enlace.</li>
+        <li>Un resultado de la calculadora que no coincide con su hoja oficial: indique los puntajes estándar (sin su nombre).</li>
+        <li>Un error en una pregunta de práctica.</li>
+        <li>Insertar la calculadora en un sitio escolar o comunitario: el código está en la <a href={route('widget', lang)}>página de inserción</a>.</li>
+      </ul>
+      <h2>Lo que no podemos hacer</h2>
+      <p>No somos reclutadores ni el Departamento de Defensa: no podemos programar un examen, consultar sus puntajes oficiales ni decidir sobre una dispensa. Para eso, diríjase a un reclutador de la rama que le interesa.</p>
+      <h2>Editor</h2>
+      <LegalIdentity lang={lang} />
+    </> : <>
+      <h1>Contact</h1>
+      <p>Write to <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. There is no form, no phone line and no account: one address, read by the people who keep the calculators up to date.</p>
+      <h2>Messages that help</h2>
+      <ul>
+        <li>A branch minimum that changed on its official site: give the branch and the link.</li>
+        <li>A calculator result that does not match your official sheet: give the standard scores (not your name).</li>
+        <li>An error in a practice question.</li>
+        <li>Embedding the calculator on a school or community site: the code is on the <a href={route('widget', lang)}>embed page</a>.</li>
+      </ul>
+      <h2>What we cannot do</h2>
+      <p>We are not recruiters or the Department of Defense: we cannot schedule a test, look up your official scores or decide on a waiver. For that, contact a recruiter of the branch you are interested in.</p>
+      <h2>Publisher</h2>
+      <LegalIdentity lang={lang} />
+    </>}
+  </div>
+</PageLayout>

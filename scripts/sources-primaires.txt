@@ -1,0 +1,12 @@
+# Official ASVAB, site du Department of Defense (DMDC / Defense Personnel Assessment Center) : page officielle du test, publie le rapport technique de la grille 1997 (tables de conversion AFQT et composites).
+officialasvab.com
+# goarmy.com, site officiel de recrutement de l'U.S. Army : minimum AFQT et règles d'engagement de l'Armée de terre.
+goarmy.com
+# airforce.com, site officiel de recrutement de l'U.S. Air Force : minimums AFQT, liste des métiers et scores MAGE requis.
+airforce.com
+# marines.com, site officiel de recrutement de l'U.S. Marine Corps : minimum AFQT.
+marines.com
+# gocoastguard.com, site officiel de recrutement de l'U.S. Coast Guard : minimum AFQT.
+gocoastguard.com
+# spaceforce.com, site officiel de recrutement de l'U.S. Space Force : conditions d'engagement.
+spaceforce.com

@@ -1,0 +1,1626 @@
+{
+"_source": "https://www.airforce.com/bin/api/careers (public careers API of airforce.com), enlisted careers only",
+"retrieved_at": "2026-10-22",
+"jobs": [
+{
+"t": "Administration",
+"afsc": "3F5X1",
+"req": [
+[
+"A",
+55
+]
+],
+"raw": "A55",
+"tag": "Resource Management & Support",
+"url": "https://www.airforce.com/careers/logistics-and-administration/administration"
+},
+{
+"t": "Advanced Fighter Aircraft Integrated Avionics",
+"afsc": "2A3X5",
+"req": [
+[
+"A",
+70
+]
+],
+"raw": "A70",
+"tag": "Airframe Inspection & Maintenance",
+"url": "https://www.airforce.com/careers/aviation-and-flight/advanced-fighter-aircraft-integrated-avionics"
+},
+{
+"t": "Aerospace Ground Equipment",
+"afsc": "2A6X2",
+"req": [
+[
+"M",
+47
+],
+[
+"E",
+28
+]
+],
+"raw": "M47 & E28",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aerospace-ground-equipment"
+},
+{
+"t": "Aerospace Medical Service",
+"afsc": "4N0X1",
+"req": [
+[
+"G",
+50
+]
+],
+"raw": "G50",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/aerospace-medical-service"
+},
+{
+"t": "Aerospace Physiology",
+"afsc": "1H0X1",
+"req": [
+[
+"A",
+48
+]
+],
+"raw": "A48",
+"tag": "Aviation and Flight",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aerospace-physiology"
+},
+{
+"t": "Aerospace Propulsion",
+"afsc": "2A6X1",
+"req": [
+[
+"M",
+56
+]
+],
+"raw": "M56",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aerospace-propulsion"
+},
+{
+"t": "Air Traffic Control",
+"afsc": "1C1X1",
+"req": [
+[
+"G",
+55
+]
+],
+"raw": "G55",
+"tag": "Flight Operations",
+"url": "https://www.airforce.com/careers/aviation-and-flight/air-traffic-control"
+},
+{
+"t": "Air Transportation",
+"afsc": "2T2X1",
+"req": [
+[
+"M",
+47
+],
+[
+"A",
+28
+]
+],
+"raw": "M47 & A28",
+"tag": "Materiel Management",
+"url": "https://www.airforce.com/careers/logistics-and-administration/air-transportation"
+},
+{
+"t": "Airborne Cryptologic Language Analyst",
+"afsc": "1A8X1",
+"req": [
+[
+"G",
+72
+]
+],
+"raw": "G72",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/airborne-cryptologic-language-analyst"
+},
+{
+"t": "Airborne Intelligence, Surveillance and Reconnaissance (ISR) Operator",
+"afsc": "1A8X2",
+"req": [
+[
+"G",
+72
+]
+],
+"raw": "G72",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/airborne-intelligence-surveillance-and-reconnaissance-isr-operator"
+},
+{
+"t": "Airborne Mission Systems Specialist",
+"afsc": "1A3X1",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/aviation-and-flight/airborne-mission-systems-specialist"
+},
+{
+"t": "Aircraft Armament Systems",
+"afsc": "2W1X1",
+"req": [
+[
+"M",
+60
+],
+[
+"E",
+45
+]
+],
+"raw": "M60 & E45",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/aircraft-armament-systems"
+},
+{
+"t": "Aircraft Electrical and Environmental Systems",
+"afsc": "2A6X6",
+"req": [
+[
+"M",
+41
+],
+[
+"E",
+61
+]
+],
+"raw": "M41 & E61",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aircraft-electrical-and-environmental-systems"
+},
+{
+"t": "Aircraft Fuel Systems",
+"afsc": "2A6X4",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aircraft-fuel-systems"
+},
+{
+"t": "Aircraft Hydraulic Systems",
+"afsc": "2A6X5",
+"req": [
+[
+"M",
+56
+]
+],
+"raw": "M56",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aircraft-hydraulic-systems"
+},
+{
+"t": "Aircraft Metals Technology",
+"afsc": "2A7X1",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Airframe Inspection & Maintenance",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aircraft-metals-technology"
+},
+{
+"t": "Aircraft Structural Maintenance",
+"afsc": "2A7X3",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Airframe Inspection & Maintenance",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aircraft-structural-maintenance"
+},
+{
+"t": "Aircrew Egress Systems",
+"afsc": "2A6X3",
+"req": [
+[
+"M",
+56
+]
+],
+"raw": "M56",
+"tag": "Airframe Inspection & Maintenance",
+"url": "https://www.airforce.com/careers/aviation-and-flight/aircrew-egress-systems"
+},
+{
+"t": "Aircrew Flight Equipment",
+"afsc": "1P0X1",
+"req": [
+[
+"M",
+40
+]
+],
+"raw": "M40",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/logistics-and-administration/aircrew-flight-equipment"
+},
+{
+"t": "Airfield Management",
+"afsc": "1C7X1",
+"req": [
+[
+"M",
+40
+],
+[
+"G",
+50
+]
+],
+"raw": "M40 & G50",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/aviation-and-flight/airfield-management"
+},
+{
+"t": "Airlift/Special Mission Aircraft Maintenance",
+"afsc": "2A5X1",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/airlift-special-mission-aircraft-maintenance"
+},
+{
+"t": "All Source Intelligence Analyst",
+"afsc": "1N0X1",
+"req": [
+[
+"A",
+60
+]
+],
+"raw": "A60",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/all-source-intelligence-analyst"
+},
+{
+"t": "All-Domain Command and Control Operations",
+"afsc": "1C3X1",
+"req": [
+[
+"A",
+55
+],
+[
+"G",
+57
+]
+],
+"raw": "A55 & G57",
+"tag": "Flight Operations",
+"url": "https://www.airforce.com/careers/aviation-and-flight/all-domain-command-and-control-operations"
+},
+{
+"t": "Aviation Resource Management",
+"afsc": "1C0X2",
+"req": [
+[
+"A",
+50
+]
+],
+"raw": "A50",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/aviation-resource-management"
+},
+{
+"t": "Avionics Test Station and Components",
+"afsc": "2A0X1",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Specialty Electronics",
+"url": "https://www.airforce.com/careers/aviation-and-flight/avionics-test-station-and-components"
+},
+{
+"t": "Avionics Test Station, Components, and Electronic Warfare Systems",
+"afsc": "2A0X1",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/avionics-test-station-components-and-electronic-warfare-systems"
+},
+{
+"t": "Battle Management Operations",
+"afsc": "1C5X1",
+"req": [
+[
+"G",
+55
+]
+],
+"raw": "G55",
+"tag": "Flight Operations",
+"url": "https://www.airforce.com/careers/aviation-and-flight/battle-management-operations"
+},
+{
+"t": "Bioenvironmental Engineering",
+"afsc": "4B0X1",
+"req": [
+[
+"G",
+49
+]
+],
+"raw": "G49",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/healthcare/bioenvironmental-engineering"
+},
+{
+"t": "Biomedical Equipment",
+"afsc": "4A2X1",
+"req": [
+[
+"M",
+60
+],
+[
+"E",
+70
+]
+],
+"raw": "M60 & E70",
+"tag": "Specialty Electronics",
+"url": "https://www.airforce.com/careers/healthcare/biomedical-equipment"
+},
+{
+"t": "Cable and Antennae Defense Operations",
+"afsc": "1D7X3",
+"req": [
+[
+"M",
+45
+],
+[
+"E",
+60
+]
+],
+"raw": "M45 & E60",
+"tag": "Specialty Electronics",
+"url": "https://www.airforce.com/careers/science-and-technology/cable-and-antenna-operations"
+},
+{
+"t": "Client Systems",
+"afsc": "3D1X1",
+"req": [
+[
+"E",
+60
+]
+],
+"raw": "E60",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/client-systems"
+},
+{
+"t": "Combat Control",
+"afsc": "1Z2X1",
+"req": [
+[
+"M",
+55
+],
+[
+"G",
+55
+]
+],
+"raw": "M55 & G55",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/special-warfare-and-combat-support/special-warfare/combat-control"
+},
+{
+"t": "Computer Systems Programming",
+"afsc": "3D0X4, 1D7X1",
+"req": [
+[
+"G",
+64
+]
+],
+"raw": "G64",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/intelligence/computer-systems-programming"
+},
+{
+"t": "Contracting",
+"afsc": "6C0X1",
+"req": [
+[
+"G",
+72
+]
+],
+"raw": "G72",
+"tag": "Resource Management & Support",
+"url": "https://www.airforce.com/careers/logistics-and-administration/contracting"
+},
+{
+"t": "Cryptologic Analyst and Reporter",
+"afsc": "1N4X2",
+"req": [
+[
+"G",
+62
+]
+],
+"raw": "G62",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cryptologic-analyst-and-reporter"
+},
+{
+"t": "Cryptologic Language Analyst",
+"afsc": "1N3X1",
+"req": [
+[
+"G",
+72
+]
+],
+"raw": "G72",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cryptologic-language-analyst"
+},
+{
+"t": "Cyber Defense Operations",
+"afsc": "1D7X1",
+"req": [
+[
+"G",
+45
+],
+[
+"E",
+60
+]
+],
+"raw": "G45 & E60",
+"tag": "Cyber Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cyber-system-operations"
+},
+{
+"t": "Cyber Intelligence Analyst",
+"afsc": "1N4X1",
+"req": [
+[
+"G",
+62
+]
+],
+"raw": "G62",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cyber-intelligence-analyst"
+},
+{
+"t": "Cyber Systems Operations",
+"afsc": "3D0X2",
+"req": [
+[
+"M",
+45
+],
+[
+"E",
+60
+]
+],
+"raw": "M45 & E60",
+"tag": "Cyber Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cyber-systems-operations"
+},
+{
+"t": "Cyber Transport Systems",
+"afsc": "3D1X2",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Cyber Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cyber-transport-systems"
+},
+{
+"t": "Cyber Warfare Operations",
+"afsc": "1B4X1",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/cyber-warfare-operations"
+},
+{
+"t": "Dental Assistant",
+"afsc": "4Y0X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/dental-assistant"
+},
+{
+"t": "Dental Laboratory",
+"afsc": "4Y0X2",
+"req": [
+[
+"G",
+66
+]
+],
+"raw": "G66",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/dental-laboratory"
+},
+{
+"t": "Diagnostic Imaging",
+"afsc": "4R0X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/diagnostic-imaging"
+},
+{
+"t": "Diet Therapy",
+"afsc": "4D0X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/diet-therapy"
+},
+{
+"t": "Electrical Power Production",
+"afsc": "3E0X2",
+"req": [
+[
+"M",
+56
+],
+[
+"E",
+40
+]
+],
+"raw": "M56 & E40",
+"tag": "Facilities Construction, Maintenance & Support",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/electrical-power-production"
+},
+{
+"t": "Electrical Systems",
+"afsc": "3E0X1",
+"req": [
+[
+"M",
+43
+],
+[
+"E",
+45
+]
+],
+"raw": "M43 & E45",
+"tag": "Facilities Construction, Maintenance & Support",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/electrical-systems"
+},
+{
+"t": "Emergency Management",
+"afsc": "3E9X1",
+"req": [
+[
+"G",
+62
+]
+],
+"raw": "G62",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/law-and-order/emergency-management"
+},
+{
+"t": "Engineering",
+"afsc": "3E5X1",
+"req": [
+[
+"G",
+49
+]
+],
+"raw": "G49",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/engineering"
+},
+{
+"t": "Explosive Ordnance Disposal (EOD)",
+"afsc": "3E8X1",
+"req": [
+[
+"M",
+47
+],
+[
+"G",
+50
+]
+],
+"raw": "M47 & G50",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/special-warfare-and-combat-support/explosive-ordnance-disposal-eod"
+},
+{
+"t": "Fighter Aircraft Integrated Avionics",
+"afsc": "2A3X4",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Avionics & Integrated Systems",
+"url": "https://www.airforce.com/careers/aviation-and-flight/fighter-aircraft-integrated-avionics"
+},
+{
+"t": "Financial Management and Comptroller",
+"afsc": "6F0X1",
+"req": [
+[
+"G",
+57
+]
+],
+"raw": "G57",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/financial-management-and-comptroller"
+},
+{
+"t": "Fire Protection",
+"afsc": "3E7X1",
+"req": [
+[
+"G",
+57
+]
+],
+"raw": "G57",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/law-and-order/fire-protection"
+},
+{
+"t": "Fleet Management and Analysis",
+"afsc": "2T3X7",
+"req": [
+[
+"A",
+41
+]
+],
+"raw": "A41",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/fleet-management-and-analysis"
+},
+{
+"t": "Flight Nurse",
+"afsc": "46FX",
+"req": [],
+"raw": "A0",
+"tag": "Nursing",
+"url": "https://www.airforce.com/careers/healthcare/flight-nurse"
+},
+{
+"t": "Fuels Management",
+"afsc": "2F0X1",
+"req": [
+[
+"M",
+47
+],
+[
+"G",
+38
+]
+],
+"raw": "M47 & G38",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/fuels-management"
+},
+{
+"t": "Geospatial Intelligence",
+"afsc": "1N1X1",
+"req": [
+[
+"G",
+66
+]
+],
+"raw": "G66",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/geospatial-intelligence"
+},
+{
+"t": "Ground Transportation",
+"afsc": "2T1X1",
+"req": [
+[
+"M",
+40
+]
+],
+"raw": "M40",
+"tag": "Materiel Management",
+"url": "https://www.airforce.com/careers/logistics-and-administration/ground-transportation"
+},
+{
+"t": "Health Services Management",
+"afsc": "4A0X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/health-services-management"
+},
+{
+"t": "Heating, Ventilation, Air Conditioning and Refrigeration",
+"afsc": "3E1X1",
+"req": [
+[
+"M",
+55
+],
+[
+"E",
+45
+]
+],
+"raw": "M55 & E45",
+"tag": "Facilities Construction, Maintenance & Support",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/heating-ventilation-air-conditioning-and-refrigeration"
+},
+{
+"t": "Helicopter/Tiltrotor Aircraft Maintenance",
+"afsc": "2A5X2",
+"req": [
+[
+"M",
+56
+]
+],
+"raw": "M56",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/helicopter-tiltrotor-aircraft-maintenance"
+},
+{
+"t": "Histopathology",
+"afsc": "4T0X2",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Medical Technicians & Specialists",
+"url": "https://www.airforce.com/careers/healthcare/histopathology"
+},
+{
+"t": "Honor Guard",
+"afsc": "3N1X1",
+"req": [
+[
+"A",
+24
+],
+[
+"G",
+24
+]
+],
+"raw": "A24 & G24",
+"tag": "Institutional Support",
+"url": "https://www.airforce.com/careers/logistics-and-administration/honor-guard"
+},
+{
+"t": "Human Resources and Administration",
+"afsc": "3F0X1",
+"req": [
+[
+"A",
+59
+]
+],
+"raw": "A59",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/human-resources-and-administration"
+},
+{
+"t": "Knowledge Operations Management",
+"afsc": "3D0X1",
+"req": [
+[
+"G",
+64
+]
+],
+"raw": "G64",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/knowledge-operations-management"
+},
+{
+"t": "Logistics Plans",
+"afsc": "2G0X1",
+"req": [
+[
+"A",
+56
+]
+],
+"raw": "A56",
+"tag": "Resource Management & Support",
+"url": "https://www.airforce.com/careers/logistics-and-administration/logistics-plans"
+},
+{
+"t": "Maintenance Management",
+"afsc": "2R1X1",
+"req": [
+[
+"G",
+55
+]
+],
+"raw": "G55",
+"tag": "Resource Management & Support",
+"url": "https://www.airforce.com/careers/logistics-and-administration/maintenance-management"
+},
+{
+"t": "Materiel Management",
+"afsc": "2S0X1",
+"req": [
+[
+"A",
+41
+],
+[
+"G",
+44
+]
+],
+"raw": "A41 & G44",
+"tag": "Materiel Management",
+"url": "https://www.airforce.com/careers/logistics-and-administration/materiel-management"
+},
+{
+"t": "Medical Laboratory",
+"afsc": "4T0X1",
+"req": [
+[
+"G",
+62
+]
+],
+"raw": "G62",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/medical-laboratory"
+},
+{
+"t": "Medical Materiel",
+"afsc": "4A1X1",
+"req": [
+[
+"A",
+48
+]
+],
+"raw": "A48",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/medical-materiel"
+},
+{
+"t": "Mental Health Service",
+"afsc": "4C0X1",
+"req": [
+[
+"A",
+57
+]
+],
+"raw": "A57",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/mental-health-service"
+},
+{
+"t": "Missile and Space Facilities",
+"afsc": "2M0X3",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Facilities Construction, Maintenance & Support",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/missile-and-space-facilities"
+},
+{
+"t": "Missile and Space Systems Electronic Maintenance",
+"afsc": "2M0X1",
+"req": [
+[
+"M",
+55
+],
+[
+"E",
+50
+]
+],
+"raw": "M55 & E50",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/missile-and-space-systems-electronic-maintenance"
+},
+{
+"t": "Missile and Space Systems Maintenance",
+"afsc": "2M0X2",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/missile-and-space-systems-maintenance"
+},
+{
+"t": "Mission Generation Vehicular Equipment Maintenance",
+"afsc": "2T3X1",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/mission-generation-vehicular-equipment-maintenance"
+},
+{
+"t": "Mobility Air Forces Electronic Warfare Systems",
+"afsc": "2A5X3",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Aviation and Flight",
+"url": "https://www.airforce.com/careers/aviation-and-flight/mobility-air-forces-electronic-warfare-systems"
+},
+{
+"t": "Munitions Systems",
+"afsc": "2W0X1",
+"req": [
+[
+"M",
+60
+],
+[
+"G",
+57
+]
+],
+"raw": "M60 & G57",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/logistics-and-administration/munitions-systems"
+},
+{
+"t": "Nondestructive Inspection",
+"afsc": "2A7X2",
+"req": [
+[
+"M",
+42
+]
+],
+"raw": "M42",
+"tag": "Airframe Inspection & Maintenance",
+"url": "https://www.airforce.com/careers/aviation-and-flight/nondestructive-inspection"
+},
+{
+"t": "Nuclear Weapons",
+"afsc": "2W2X1",
+"req": [
+[
+"M",
+60
+]
+],
+"raw": "M60",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/nuclear-weapons"
+},
+{
+"t": "Operations Intelligence",
+"afsc": "1NOX1",
+"req": [],
+"raw": "A0",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/operations-intelligence"
+},
+{
+"t": "Operations Management",
+"afsc": "3E6X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/operations-management"
+},
+{
+"t": "Ophthalmic",
+"afsc": "4V0X1",
+"req": [],
+"raw": "A0",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/ophthalmic"
+},
+{
+"t": "Paralegal",
+"afsc": "5J0X1",
+"req": [
+[
+"G",
+51
+]
+],
+"raw": "G51",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/law-and-order/paralegal"
+},
+{
+"t": "Pararescue",
+"afsc": "1Z1X1",
+"req": [
+[
+"G",
+55
+],
+[
+"M",
+55
+]
+],
+"raw": "G55 & M55",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/special-warfare-and-combat-support/special-warfare/pararescue"
+},
+{
+"t": "Pavements and Construction Equipment",
+"afsc": "3E2X1",
+"req": [
+[
+"M",
+40
+]
+],
+"raw": "M40",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/pavements-and-construction-equipment"
+},
+{
+"t": "Pest Management",
+"afsc": "3E4X3",
+"req": [
+[
+"G",
+38
+]
+],
+"raw": "G38",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/pest-management"
+},
+{
+"t": "Pharmacy",
+"afsc": "4P0X1",
+"req": [
+[
+"A",
+48
+]
+],
+"raw": "A48",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/pharmacy"
+},
+{
+"t": "Physical Medicine",
+"afsc": "4J0X2",
+"req": [
+[
+"A",
+51
+]
+],
+"raw": "A51",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/physical-medicine"
+},
+{
+"t": "Precision Measurement Equipment Laboratory",
+"afsc": "2P0X1",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/precision-measurement-equipment-laboratory"
+},
+{
+"t": "Premier Band",
+"afsc": "3N2X1, 3N3X1",
+"req": [
+[
+"A",
+21
+],
+[
+"G",
+24
+]
+],
+"raw": "A21 & G24",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/premier-band"
+},
+{
+"t": "Public Affairs",
+"afsc": "3N0X6",
+"req": [
+[
+"G",
+72
+]
+],
+"raw": "G72",
+"tag": "Institutional Support",
+"url": "https://www.airforce.com/careers/logistics-and-administration/public-affairs"
+},
+{
+"t": "Public Health",
+"afsc": "4E0X1",
+"req": [
+[
+"A",
+48
+]
+],
+"raw": "A48",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/public-health"
+},
+{
+"t": "Radar, Airfield & Weather Systems",
+"afsc": "1C8X3",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Specialty Electronics",
+"url": "https://www.airforce.com/careers/science-and-technology/radar-airfield-and-weather-systems"
+},
+{
+"t": "Radio Frequency Transmission Systems",
+"afsc": "3D1X3",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/radio-frequency-transmission-systems"
+},
+{
+"t": "Radio Frequency Transmissions and Electromagnetic Activities (EMA)",
+"afsc": "1D7X2",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/radio-frequency-transmissions-and-electromagnetic-activities"
+},
+{
+"t": "Refuel/Bomber Aircraft Maintenance",
+"afsc": "2A5X4",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/aviation-and-flight/refuel-bomber-aircraft-maintenance"
+},
+{
+"t": "Regional Band",
+"afsc": "3N1X1",
+"req": [
+[
+"A",
+21
+],
+[
+"G",
+24
+]
+],
+"raw": "A21 & G24",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/regional-band"
+},
+{
+"t": "Religious Affairs",
+"afsc": "5R0X1",
+"req": [
+[
+"A",
+51
+]
+],
+"raw": "A51",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/religious-affairs"
+},
+{
+"t": "Respiratory Care Practitioner",
+"afsc": "4H0X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/respiratory-care-practitioner"
+},
+{
+"t": "Safety",
+"afsc": "1S0X1",
+"req": [
+[
+"A",
+57
+]
+],
+"raw": "A57",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/law-and-order/safety"
+},
+{
+"t": "Scientific Applications Specialist",
+"afsc": "9S100",
+"req": [
+[
+"M",
+80
+],
+[
+"E",
+88
+]
+],
+"raw": "M80 & E88",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/scientific-applications-specialist"
+},
+{
+"t": "Security Forces",
+"afsc": "3P0X1",
+"req": [
+[
+"G",
+30
+]
+],
+"raw": "G30",
+"tag": "Law and Order",
+"url": "https://www.airforce.com/careers/law-and-order/security-forces"
+},
+{
+"t": "Sensor Operator",
+"afsc": "1U0X1",
+"req": [
+[
+"G",
+64
+],
+[
+"E",
+54
+]
+],
+"raw": "G64 & E54",
+"tag": "Aviation and Flight",
+"url": "https://www.airforce.com/careers/aviation-and-flight/remotely-piloted-aircraft-rpa-sensor-operator"
+},
+{
+"t": "Services",
+"afsc": "3F1X1",
+"req": [
+[
+"G",
+24
+]
+],
+"raw": "G24",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/services"
+},
+{
+"t": "Signals Intelligence Analyst",
+"afsc": "1N2X1",
+"req": [
+[
+"G",
+72
+]
+],
+"raw": "G72",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/signals-intelligence-analyst"
+},
+{
+"t": "Space Systems Operations",
+"afsc": "1C6X1",
+"req": [
+[
+"E",
+70
+]
+],
+"raw": "E70",
+"tag": "Intelligence",
+"url": "https://www.airforce.com/careers/intelligence/space-systems-operations"
+},
+{
+"t": "Special Missions Aviator",
+"afsc": "1A1X3",
+"req": [
+[
+"M",
+60
+],
+[
+"G",
+60
+]
+],
+"raw": "M60 & G60",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/aviation-and-flight/special-missions-aviator"
+},
+{
+"t": "Special Reconnaissance",
+"afsc": "1Z4X1",
+"req": [
+[
+"G",
+66
+],
+[
+"E",
+50
+]
+],
+"raw": "G66 & E50",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/special-warfare-and-combat-support/special-warfare/special-reconnaissance"
+},
+{
+"t": "Spectrum Defense Operations",
+"afsc": "1D7X2",
+"req": [],
+"raw": "A0",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/intelligence/cyber-and-electromagnetic-activities"
+},
+{
+"t": "Structural",
+"afsc": "3E3X1, 3E331",
+"req": [
+[
+"M",
+47
+]
+],
+"raw": "M47",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/structural"
+},
+{
+"t": "Surgical Technologist",
+"afsc": "4N1X1",
+"req": [
+[
+"G",
+44
+]
+],
+"raw": "G44",
+"tag": "Healthcare",
+"url": "https://www.airforce.com/careers/healthcare/surgical-technologist"
+},
+{
+"t": "Survival Evasion Resistance and Escape (SERE)",
+"afsc": "1T0X1",
+"req": [
+[
+"G",
+55
+]
+],
+"raw": "G55",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/special-warfare-and-combat-support/survival-evasion-resistance-and-escape-sere"
+},
+{
+"t": "Tactical Air Control Party Specialist (TACP)",
+"afsc": "1Z3X1",
+"req": [
+[
+"G",
+49
+]
+],
+"raw": "G49",
+"tag": "Combat and Warfare",
+"url": "https://www.airforce.com/careers/special-warfare-and-combat-support/special-warfare/tactical-air-control-party-specialist-tacp"
+},
+{
+"t": "Targeting Analyst",
+"afsc": "1N8X1",
+"req": [],
+"raw": "A0",
+"tag": "Science and Technology",
+"url": "https://www.airforce.com/careers/science-and-technology/targeting-analyst"
+},
+{
+"t": "Traffic Management",
+"afsc": "2T0X1",
+"req": [
+[
+"A",
+35
+]
+],
+"raw": "A35",
+"tag": "Logistics and Administration",
+"url": "https://www.airforce.com/careers/logistics-and-administration/traffic-management"
+},
+{
+"t": "Vehicle Management",
+"afsc": "2T3X2",
+"req": [],
+"raw": "A0",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/vehicle-management"
+},
+{
+"t": "Water and Fuel Systems Maintenance",
+"afsc": "3E4X1",
+"req": [
+[
+"M",
+47
+],
+[
+"E",
+28
+]
+],
+"raw": "M47 & E28",
+"tag": "Maintenance and Repair",
+"url": "https://www.airforce.com/careers/maintenance-and-repair/water-and-fuel-systems-maintenance"
+},
+{
+"t": "Weather",
+"afsc": "1W0X1",
+"req": [
+[
+"G",
+66
+],
+[
+"E",
+50
+]
+],
+"raw": "G66 & E50",
+"tag": "Flight Operations",
+"url": "https://www.airforce.com/careers/aviation-and-flight/weather"
+}
+]
+}

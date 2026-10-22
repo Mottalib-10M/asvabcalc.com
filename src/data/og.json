@@ -1,0 +1,20 @@
+{
+ "accent": "#3F5A24",
+ "symbol": "QT",
+ "variants": [
+  {
+   "file": "og-en.png",
+   "title": "ASVAB score calculator\nAFQT, line scores and jobs",
+   "subtitle": "1997 conversion table · Army · Navy · Air Force · Marines · Coast Guard",
+   "badge": "Service minimums read October 2026",
+   "brand": "Score to Enlist"
+  },
+  {
+   "file": "og-es.png",
+   "title": "Calculadora de puntaje del ASVAB\nAFQT, line scores y empleos",
+   "subtitle": "Tabla de conversión de 1997 · Ejército · Armada · Fuerza Aérea · Marines",
+   "badge": "Mínimos de cada rama leídos en octubre de 2026",
+   "brand": "Puntaje para Alistarse"
+  }
+ ]
+}

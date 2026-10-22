@@ -1,0 +1,55 @@
+---
+/** Méthode (en, es) : tables, formules, sources, mise à jour, limites. Chaque chiffre vient du moteur. */
+import PageLayout from '../layouts/PageLayout.astro';
+import { route, type Locale } from '../i18n/routes';
+import { KIT as K } from '../lib/kit';
+import { srcLink, table } from '../lib/helpers';
+import { breadcrumbSchema, webPageSchema } from '../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const L = (en: string, sp: string) => (es ? sp : en);
+const E = K.E, P = K.P, f = K[lang];
+const path = route('method', lang);
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const title = L('ASVAB score method 2026: tables, formulas and sources', 'Método de puntajes ASVAB 2026: tablas, fórmulas y fuentes');
+const description = L('How the 2026 ASVAB figures are built: the 1997 AFQT and MAGE conversion tables, the Marine and Army formulas, and branch minimums read on official sites.',
+  'Cómo se construyen las cifras del ASVAB 2026: tablas de conversión AFQT y MAGE de 1997, fórmulas de Marines y Ejército y mínimos leídos en sitios oficiales.');
+const crumb = L('Method', 'Método');
+const r = E.tableRange('AFQT');
+const rows: Array<Array<string | number>> = [];
+for (let a = r.min; a <= r.max; a += 10) {
+  const row: Array<string | number> = [`${a} - ${Math.min(a + 9, r.max)}`];
+  for (let i = 0; i < 10; i++) row.push(a + i <= r.max ? E.lookup('AFQT', a + i) : '');
+  rows.push(row);
+}
+const full = table([L('Sum', 'Suma'), '+0', '+1', '+2', '+3', '+4', '+5', '+6', '+7', '+8', '+9'], rows,
+  L(`AFQT percentile for every sum AR + MK + 2VE (table 2.5). ${r.min} means ${r.min} or less, ${r.max} means ${r.max} or more.`, `Percentil AFQT para cada suma AR + MK + 2VE (tabla 2.5). ${r.min} significa ${r.min} o menos, ${r.max} significa ${r.max} o más.`), ['l', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r'], lang);
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[webPageSchema({ name: crumb, description, path, lang }), breadcrumbSchema([{ name: L('Home', 'Inicio'), path: route('home', lang) }, { name: crumb, path }])]} breadcrumbs={[{ label: crumb }]}>
+  <article class="prose prose-slate max-w-none">
+    <h1>{L('How the figures are built', 'Cómo se construyen las cifras')}</h1>
+    <p>{L(`Every number on this site comes from an official publication read on ${f.day(K.TODAY)}, through a data file that the calculators and the pages read. Nothing you type leaves your browser.`, `Cada número de este sitio viene de una publicación oficial leída el ${f.day(K.TODAY)}, a través de un archivo de datos que leen las calculadoras y las páginas. Nada de lo que usted escribe sale de su navegador.`)}</p>
+    <h2>{L('The AFQT', 'El AFQT')}</h2>
+    <p><Fragment set:html={L(`The AFQT composite is AR + MK + 2 × VE, each a rounded standard score, as defined in section 2.4 of the ${s('segall', '1997 score scale report')} (Segall, DMDC Technical Report 2004-002). The percentile is read in table 2.5 of the same report, which the site loads row by row. The category comes from the ranges published by ${s('oa-eligibility', 'Official ASVAB')}.`, `El compuesto AFQT es AR + MK + 2 × VE, cada uno un puntaje estándar redondeado, como lo define la sección 2.4 del ${s('segall', 'informe de la escala de 1997')} (Segall, informe técnico DMDC 2004-002). El percentil se lee en la tabla 2.5 del mismo informe, que el sitio carga fila por fila. La categoría sale de los rangos publicados por ${s('oa-eligibility', 'Official ASVAB')}.`)} /></p>
+    <Fragment set:html={full} />
+    <h2>{L('Service composites', 'Compuestos de las ramas')}</h2>
+    <ul>
+      <li>{L('Air Force: M = AR + MC + AS + 2VE, A = MK + VE, G = AR + VE, E = GS + AR + MK + EI, each converted with tables C.1 to C.4 (exact).', 'Fuerza Aérea: M = AR + MC + AS + 2VE, A = MK + VE, G = AR + VE, E = GS + AR + MK + EI, cada uno convertido con las tablas C.1 a C.4 (exacto).')}</li>
+      <li>{L('Marine Corps: MM = Rnd(0.588215 × (AR + MC + EI + AS) - 17.645724), GT = Rnd(0.755294 × (AR + MC + VE) - 13.289535), EL = Rnd(0.577992 × (GS + AR + MK + EI) - 15.599795), CL = Rnd(1.092264 × (MK + VE) - 9.232992), section 2.5.2 (exact).', 'Marines: MM = Rnd(0,588215 × (AR + MC + EI + AS) - 17,645724), GT = Rnd(0,755294 × (AR + MC + VE) - 13,289535), EL = Rnd(0,577992 × (GS + AR + MK + EI) - 15,599795), CL = Rnd(1,092264 × (MK + VE) - 9,232992), sección 2.5.2 (exacto).')}</li>
+      <li>{L('Army GT = Rnd(1.074292 × (AR + VE) - 7.443781), section 2.5.3 (exact). The nine other Army composites use the weights of table 2.7 and are labeled as estimates, since the Army may have revised them after 2004.', 'GT del Ejército = Rnd(1,074292 × (AR + VE) - 7,443781), sección 2.5.3 (exacto). Los otros nueve compuestos del Ejército usan los pesos de la tabla 2.7 y se presentan como estimaciones, porque el Ejército puede haberlos revisado después de 2004.')}</li>
+      <li>{L('Navy: plain sums of standard scores (section 2.5.4); the subtests of each rating are chosen by the reader.', 'Armada: sumas simples de puntajes estándar (sección 2.5.4); el lector elige las subpruebas de cada rating.')}</li>
+      <li>{L('VE from WK and PC: formula (2.3) of the report for the reference form 04D, an estimate within about one point.', 'VE con WK y PC: fórmula (2.3) del informe para la forma de referencia 04D, una estimación con un margen de un punto.')}</li>
+      <li>{L('Share of youths above a standard score: normal curve with mean 50 and standard deviation 10, an estimate.', 'Parte de jóvenes por encima de un puntaje estándar: curva normal de media 50 y desviación típica 10, una estimación.')}</li>
+    </ul>
+    <h2>{L('Branch minimums and rules', 'Mínimos de cada rama y reglas')}</h2>
+    <p><Fragment set:html={L(`Read on ${f.day(K.TODAY)}: ${s('army', 'goarmy.com')} (${P.branches.army.min}), ${s('airforce', 'airforce.com')} (${P.branches.airforce.min}, ${P.branches.airforce.ged} with a GED), ${s('marines', 'marines.com')} (${P.branches.marines.min}, ${P.branches.marines.ged} with a GED), ${s('coastguard', 'gocoastguard.com')} (${P.branches.coastguard.min}), ${s('spaceforce', 'spaceforce.com')} (no number). navy.com answered HTTP 403 to automated reading: no Navy figure is published. Retest, PiCAT and validity rules: ${s('oa-retest', 'retest policy')}, ${s('oa-picat', 'PiCAT page')}, ${s('oa-faqs', 'applicant FAQs')}. Test length: ${s('oa-factsheet', 'fact sheet')}. Category IV cap and the 31 floor without a diploma: ${s('usc520', '10 U.S.C. § 520')}. Air Force careers: ${s('af-careers', 'airforce.com careers listing')}, ${K.JOBS.length} enlisted careers.`,
+      `Leídos el ${f.day(K.TODAY)}: ${s('army', 'goarmy.com')} (${P.branches.army.min}), ${s('airforce', 'airforce.com')} (${P.branches.airforce.min}, ${P.branches.airforce.ged} con GED), ${s('marines', 'marines.com')} (${P.branches.marines.min}, ${P.branches.marines.ged} con GED), ${s('coastguard', 'gocoastguard.com')} (${P.branches.coastguard.min}), ${s('spaceforce', 'spaceforce.com')} (sin número). navy.com respondió HTTP 403 a la lectura automática: no se publica cifra de la Armada. Reglas de repetición, PiCAT y validez: ${s('oa-retest', 'política de repetición')}, ${s('oa-picat', 'página del PiCAT')}, ${s('oa-faqs', 'preguntas frecuentes')}. Duración: ${s('oa-factsheet', 'hoja informativa')}. Límite de la categoría IV y piso de 31 sin diploma: ${s('usc520', '10 U.S.C. § 520')}. Carreras de la Fuerza Aérea: ${s('af-careers', 'lista de carreras de airforce.com')}, ${K.JOBS.length} carreras enlisted.`)} /></p>
+    <h2>{L('Practice questions', 'Preguntas de práctica')}</h2>
+    <p>{L('The 80 practice questions, ten per subtest, were written by Radif Partners for this site. They are not ASVAB items, they are not calibrated, and a share of right answers does not convert into a standard score or an AFQT.', 'Las 80 preguntas de práctica, diez por subprueba, las escribió Radif Partners para este sitio. No son preguntas del ASVAB, no están calibradas y un porcentaje de aciertos no se convierte en puntaje estándar ni en AFQT.')}</p>
+    <h2>{L('Updates and checks', 'Actualización y controles')}</h2>
+    <p>{L('A script re-reads the Air Force careers listing and checks the branch and Official ASVAB pages every week; a change is reviewed before it reaches the site. Automated tests check the table readings (a sum of 202 gives 50, 183 gives 31), the composite formulas, the branch minimums and the retest dates before each release.', 'Un script vuelve a leer la lista de carreras de la Fuerza Aérea y revisa cada semana las páginas de las ramas y de Official ASVAB; un cambio se revisa antes de llegar al sitio. Pruebas automáticas comprueban las lecturas de la tabla (una suma de 202 da 50, 183 da 31), las fórmulas de los compuestos, los mínimos de las ramas y las fechas de repetición antes de cada publicación.')}</p>
+    <h2>{L('Limits', 'Límites')}</h2>
+    <p>{L('The site converts scores you already have; it cannot know your scores before a test. Composites marked as estimates can differ from a printout by a few points. Job minimums for Army, Navy and Marine Corps specialties are not published, because their current lists could not be read. The printout of your test and your recruiter prevail.', 'El sitio convierte puntajes que usted ya tiene; no puede conocer sus puntajes antes del examen. Los compuestos marcados como estimaciones pueden diferir de la hoja en algunos puntos. No se publican los mínimos por empleo del Ejército, la Armada ni los Marines, porque sus listas vigentes no pudieron leerse. La hoja de su examen y su reclutador prevalecen.')}</p>
+  </article>
+</PageLayout>

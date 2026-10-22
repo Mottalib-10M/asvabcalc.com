@@ -1,0 +1,528 @@
+{
+ "_lisezmoi": "Faits officiels du site, relus sur la source citée le 2026-10-22 (CONTRIBUTING-DONNEES.md). Tables de conversion : conversion-1997.json ; métiers de l'Air Force : af-jobs.json. Un chiffre absent ici n'est pas publié.",
+ "year": 2026,
+ "retrieved_at": "2026-10-22",
+ "sources": {
+  "segall": {
+   "url": "https://www.officialasvab.com/wp-content/uploads/2019/08/1997score_scale.pdf",
+   "label": {
+    "en": "Segall (2004), Development and Evaluation of the 1997 ASVAB Score Scale, DMDC Technical Report 2004-002",
+    "es": "Segall (2004), Development and Evaluation of the 1997 ASVAB Score Scale, informe técnico DMDC 2004-002"
+   }
+  },
+  "oa-scores": {
+   "url": "https://www.officialasvab.com/applicants/scores/",
+   "label": {
+    "en": "Official ASVAB, Understanding ASVAB scores",
+    "es": "Official ASVAB, Understanding ASVAB scores (en inglés)"
+   }
+  },
+  "oa-scoring": {
+   "url": "https://www.officialasvab.com/researchers/scores/",
+   "label": {
+    "en": "Official ASVAB, ASVAB scoring (researchers)",
+    "es": "Official ASVAB, ASVAB scoring, página para investigadores (en inglés)"
+   }
+  },
+  "oa-eligibility": {
+   "url": "https://www.officialasvab.com/recruiters/enlistment-eligibility/",
+   "label": {
+    "en": "Official ASVAB, Enlistment eligibility and AFQT categories",
+    "es": "Official ASVAB, Enlistment eligibility y categorías AFQT (en inglés)"
+   }
+  },
+  "oa-faqs": {
+   "url": "https://www.officialasvab.com/applicants/faqs/",
+   "label": {
+    "en": "Official ASVAB, Applicant FAQs",
+    "es": "Official ASVAB, preguntas frecuentes de los aspirantes (en inglés)"
+   }
+  },
+  "oa-retest": {
+   "url": "https://www.officialasvab.com/recruiters/asvab-retest-policy/",
+   "label": {
+    "en": "Official ASVAB, ASVAB retest policy",
+    "es": "Official ASVAB, ASVAB retest policy (en inglés)"
+   }
+  },
+  "oa-picat": {
+   "url": "https://www.officialasvab.com/recruiters/picat/",
+   "label": {
+    "en": "Official ASVAB, Unproctored administration of the ASVAB: PiCAT",
+    "es": "Official ASVAB, PiCAT, examen sin supervisión (en inglés)"
+   }
+  },
+  "oa-apt": {
+   "url": "https://www.officialasvab.com/recruiters/afqt-predictor-test/",
+   "label": {
+    "en": "Official ASVAB, The AFQT Predictor Test (APT)",
+    "es": "Official ASVAB, AFQT Predictor Test (APT) (en inglés)"
+   }
+  },
+  "oa-factsheet": {
+   "url": "https://www.officialasvab.com/recruiters/fact-sheet/",
+   "label": {
+    "en": "Official ASVAB, ASVAB fact sheet",
+    "es": "Official ASVAB, hoja informativa del ASVAB (en inglés)"
+   }
+  },
+  "oa-myths": {
+   "url": "https://www.officialasvab.com/recruiters/myths/",
+   "label": {
+    "en": "Official ASVAB, Myths about the ASVAB",
+    "es": "Official ASVAB, mitos sobre el ASVAB (en inglés)"
+   }
+  },
+  "oa-samples": {
+   "url": "https://www.officialasvab.com/applicants/sample-questions/",
+   "label": {
+    "en": "Official ASVAB, Sample questions",
+    "es": "Official ASVAB, preguntas de ejemplo (en inglés)"
+   }
+  },
+  "army": {
+   "url": "https://www.goarmy.com/how-to-join/steps/asvab",
+   "label": {
+    "en": "U.S. Army, ASVAB test and preparation (goarmy.com)",
+    "es": "Ejército de EE. UU., ASVAB test and preparation (goarmy.com, en inglés)"
+   }
+  },
+  "airforce": {
+   "url": "https://www.airforce.com/asvab",
+   "label": {
+    "en": "U.S. Air Force, ASVAB test (airforce.com)",
+    "es": "Fuerza Aérea de EE. UU., ASVAB test (airforce.com, en inglés)"
+   }
+  },
+  "af-careers": {
+   "url": "https://www.airforce.com/careers",
+   "label": {
+    "en": "U.S. Air Force, careers and their ASVAB minimums (airforce.com)",
+    "es": "Fuerza Aérea de EE. UU., carreras y sus mínimos del ASVAB (airforce.com, en inglés)"
+   }
+  },
+  "marines": {
+   "url": "https://www.marines.com/become/requirements.html",
+   "label": {
+    "en": "U.S. Marine Corps, Requirements to become a Marine (marines.com)",
+    "es": "Cuerpo de Marines, requisitos para ser Marine (marines.com, en inglés)"
+   }
+  },
+  "coastguard": {
+   "url": "https://www.gocoastguard.com/get-started",
+   "label": {
+    "en": "U.S. Coast Guard, Get started (gocoastguard.com)",
+    "es": "Guardia Costera de EE. UU., Get started (gocoastguard.com, en inglés)"
+   }
+  },
+  "spaceforce": {
+   "url": "https://www.spaceforce.com/how-to-join/enlisted-guardians",
+   "label": {
+    "en": "U.S. Space Force, Enlisted Guardians (spaceforce.com)",
+    "es": "Fuerza Espacial de EE. UU., Enlisted Guardians (spaceforce.com, en inglés)"
+   }
+  },
+  "usc520": {
+   "url": "https://www.law.cornell.edu/uscode/text/10/520",
+   "label": {
+    "en": "10 U.S.C. § 520, Limitation on enlistment and induction of persons whose score on the AFQT is below a prescribed level",
+    "es": "10 U.S.C. § 520, límite al alistamiento de personas con AFQT bajo un nivel fijado (en inglés)"
+   }
+  },
+  "army-ocs-hi": {
+   "url": "https://dod.hawaii.gov/hiarng/recruiting-and-retention/ocs/",
+   "label": {
+    "en": "Hawaii Army National Guard, Officer Candidate School (OCS)",
+    "es": "Guardia Nacional del Ejército de Hawái, Officer Candidate School (en inglés)"
+   }
+  },
+  "army-ocs-mn": {
+   "url": "https://mn.gov/mnng/careers/officer-careers.jsp",
+   "label": {
+    "en": "Minnesota National Guard, Officer careers",
+    "es": "Guardia Nacional de Minnesota, carreras de oficial (en inglés)"
+   }
+  }
+ },
+ "stdScore": {
+  "mean": 50,
+  "sd": 10,
+  "normSample": "PAY97, youths aged 18 to 23",
+  "normYear": 1997,
+  "implemented": 2004
+ },
+ "categories": [
+  [
+   "I",
+   93,
+   99
+  ],
+  [
+   "II",
+   65,
+   92
+  ],
+  [
+   "IIIA",
+   50,
+   64
+  ],
+  [
+   "IIIB",
+   31,
+   49
+  ],
+  [
+   "IVA",
+   21,
+   30
+  ],
+  [
+   "IVB",
+   16,
+   20
+  ],
+  [
+   "IVC",
+   10,
+   15
+  ],
+  [
+   "V",
+   1,
+   9
+  ]
+ ],
+ "branches": {
+  "army": {
+   "min": 31,
+   "ged": null,
+   "src": "army",
+   "note": "Future Soldier Preparatory Course, academic track: AFQT 21 or higher"
+  },
+  "airforce": {
+   "min": 31,
+   "ged": 50,
+   "src": "airforce"
+  },
+  "marines": {
+   "min": 31,
+   "ged": 50,
+   "src": "marines"
+  },
+  "coastguard": {
+   "min": 32,
+   "ged": null,
+   "src": "coastguard"
+  },
+  "spaceforce": {
+   "min": null,
+   "ged": null,
+   "src": "spaceforce",
+   "note": "qualifying ASVAB score, age 17 to 42"
+  },
+  "navy": {
+   "min": null,
+   "ged": null,
+   "src": null,
+   "note": "navy.com refused automated reading (HTTP 403) on 2026-10-22: no figure published"
+  }
+ },
+ "law520": {
+  "catIVcapPct": 4,
+  "nonGradMin": 31
+ },
+ "armyOcsGt": 110,
+ "testLength": {
+  "cat": {
+   "GS": [
+    15,
+    12
+   ],
+   "AR": [
+    15,
+    55
+   ],
+   "WK": [
+    15,
+    9
+   ],
+   "PC": [
+    10,
+    27
+   ],
+   "MK": [
+    15,
+    31
+   ],
+   "EI": [
+    15,
+    10
+   ],
+   "AI": [
+    10,
+    7
+   ],
+   "SI": [
+    10,
+    6
+   ],
+   "MC": [
+    15,
+    22
+   ],
+   "AO": [
+    15,
+    18
+   ]
+  },
+  "pp": {
+   "GS": [
+    25,
+    11
+   ],
+   "AR": [
+    30,
+    36
+   ],
+   "WK": [
+    35,
+    11
+   ],
+   "PC": [
+    15,
+    13
+   ],
+   "MK": [
+    25,
+    24
+   ],
+   "EI": [
+    20,
+    9
+   ],
+   "AS": [
+    25,
+    11
+   ],
+   "MC": [
+    25,
+    19
+   ],
+   "AO": [
+    25,
+    15
+   ]
+  }
+ },
+ "retest": {
+  "firstMonths": 1,
+  "secondMonths": 1,
+  "laterMonths": 6,
+  "criticalGain": 20,
+  "cheatingMonths": 6,
+  "validYears": 2
+ },
+ "picat": {
+  "codeDays": 30,
+  "finishHours": 48,
+  "vtestDays": 45,
+  "vtestMinutes": [
+   25,
+   30
+  ],
+  "hours": [
+   2,
+   3
+  ]
+ },
+ "apt": {
+  "items": 20,
+  "minutes": [
+   20,
+   30
+  ]
+ },
+ "armyComposites": {
+  "_cols": [
+   "GS",
+   "AR",
+   "MK",
+   "MC",
+   "EI",
+   "AS",
+   "VE",
+   "const"
+  ],
+  "CL": [
+   0.0,
+   0.75179,
+   0.58715,
+   0.11541,
+   0.07756,
+   0.07489,
+   0.67976,
+   -14.32772
+  ],
+  "CO": [
+   0.19868,
+   0.3309,
+   0.63397,
+   0.38486,
+   0.19979,
+   0.41161,
+   0.30347,
+   -23.17105
+  ],
+  "EL": [
+   0.08324,
+   0.44254,
+   0.49064,
+   0.26341,
+   0.30258,
+   0.36786,
+   0.49906,
+   -22.46667
+  ],
+  "FA": [
+   0.15031,
+   0.42263,
+   0.60172,
+   0.42966,
+   0.16389,
+   0.35866,
+   0.31958,
+   -22.32119
+  ],
+  "GM": [
+   0.23521,
+   0.46357,
+   0.45285,
+   0.2928,
+   0.30216,
+   0.50542,
+   0.21527,
+   -23.36174
+  ],
+  "MM": [
+   0.05942,
+   0.32829,
+   0.28517,
+   0.39607,
+   0.30796,
+   0.87309,
+   0.2115,
+   -23.08481
+  ],
+  "OF": [
+   0.14306,
+   0.53676,
+   0.34092,
+   0.36843,
+   0.19683,
+   0.50334,
+   0.36757,
+   -22.84882
+  ],
+  "SC": [
+   0.01235,
+   0.42812,
+   0.6365,
+   0.2507,
+   0.32194,
+   0.24636,
+   0.5277,
+   -21.18951
+  ],
+  "ST": [
+   0.12865,
+   0.4901,
+   0.47825,
+   0.31207,
+   0.14493,
+   0.21736,
+   0.62177,
+   -19.65219
+  ]
+ },
+ "armyGt": [
+  1.074292,
+  -7.443781
+ ],
+ "marines": {
+  "MM": [
+   [
+    "AR",
+    "MC",
+    "EI",
+    "AS"
+   ],
+   0.588215,
+   -17.645724
+  ],
+  "GT": [
+   [
+    "AR",
+    "MC",
+    "VE"
+   ],
+   0.755294,
+   -13.289535
+  ],
+  "EL": [
+   [
+    "GS",
+    "AR",
+    "MK",
+    "EI"
+   ],
+   0.577992,
+   -15.599795
+  ],
+  "CL": [
+   [
+    "MK",
+    "VE"
+   ],
+   1.092264,
+   -9.232992
+  ]
+ },
+ "mage": {
+  "M": {
+   "AR": 1,
+   "MC": 1,
+   "AS": 1,
+   "VE": 2
+  },
+  "A": {
+   "MK": 1,
+   "VE": 1
+  },
+  "G": {
+   "AR": 1,
+   "VE": 1
+  },
+  "E": {
+   "GS": 1,
+   "AR": 1,
+   "MK": 1,
+   "EI": 1
+  }
+ },
+ "veForm04D": {
+  "wk": [
+   11.032817,
+   47.80988
+  ],
+  "pc": [
+   12.351821,
+   45.886521
+  ],
+  "w": [
+   7.225587,
+   5.010103,
+   46.897156
+  ]
+ }
+}

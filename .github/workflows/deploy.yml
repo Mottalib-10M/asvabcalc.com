@@ -1,0 +1,73 @@
+name: ASVAB data check and deploy
+
+# Le 2 de chaque mois vers 8 h (heure de l'Est) : scripts/update-data.py relit l'API publique des métiers de
+# l'Air Force (régénère src/data/af-jobs.json) et chaque page officielle citée (officialasvab.com, sites de
+# recrutement, 10 U.S.C. § 520) pour vérifier que les faits publiés y figurent encore. Un fait introuvable fait
+# échouer le job (aucun chiffre n'est réécrit seul : une personne relit la page et corrige src/data/params-2026.json).
+# data/verification.json garde la date et le résultat de chaque relecture. Un push sur main rebâtit et publie.
+on:
+  schedule:
+    - cron: "0 12 2 * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps
+
+      - name: Reread the official sources (scheduled and manual runs)
+        if: github.event_name != 'push'
+        run: python3 scripts/update-data.py
+
+      - name: Tests
+        run: npx vitest run
+
+      - name: Build
+        run: npm run build
+
+      - name: Commit the refreshed data
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "Radif Partners"
+          git config user.email "amradif@gmail.com"
+          git add data/verification.json src/data/af-jobs.json src/data/params-2026.json
+          git diff --cached --quiet || (git commit -m "Sources ASVAB relues le $(date -u +%F)" && git push)
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

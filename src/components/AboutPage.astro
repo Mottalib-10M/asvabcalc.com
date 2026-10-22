@@ -1,0 +1,55 @@
+---
+/** À propos (en, es) : qui publie, pourquoi, d'où viennent les chiffres, ce que le site ne fait pas. */
+import PageLayout from '../layouts/PageLayout.astro';
+import LegalIdentity from './LegalIdentity.astro';
+import { route, type Locale } from '../i18n/routes';
+import { AUTHOR_NAME, AUTHOR_DESC, CONTACT_EMAIL, SITE_NAMES } from '../data/site-config';
+import { srcLink } from '../lib/helpers';
+import { HOME } from '../content/home';
+import { profilePageSchema, breadcrumbSchema } from '../lib/seo';
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const es = lang === 'es';
+const path = route('about', lang);
+const s = (k: string, t: string) => srcLink(k, lang, t);
+const title = es ? 'Puntaje para Alistarse 2026: quién lo publica y por qué' : 'Score to Enlist 2026: who publishes it and why it exists';
+const description = es
+  ? 'Puntaje para Alistarse lo publica Radif Partners: el ASVAB 2026 convertido con las tablas oficiales de 1997, sin formulario, sin afiliados y sin cuenta.'
+  : 'Score to Enlist is published by Radif Partners: 2026 ASVAB scores converted with the official 1997 tables, with no form, no affiliate link and no account.';
+const crumb = es ? 'Quiénes somos' : 'About';
+---
+<PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: es ? 'Inicio' : 'Home', path: route('home', lang) }, { name: crumb, path }])]} breadcrumbs={[{ label: crumb }]}>
+  <article class="prose prose-slate max-w-none">
+    {es ? <>
+      <h1>Quiénes publican {SITE_NAMES.es}</h1>
+      <p>{AUTHOR_DESC.es}</p>
+      <h2>Por qué existe este sitio</h2>
+      <p>Quien busca cómo convertir sus puntajes del ASVAB encuentra sobre todo tres tipos de páginas. Calculadoras que suman puntajes sin la tabla de conversión y dan percentiles aproximados. Listas de mínimos por rama copiadas de un sitio a otro, que a veces contradicen a las propias ramas. Y cursos o aplicaciones que piden una cuenta o un pago antes de mostrar nada. Las fuentes oficiales son sólidas, pero están repartidas entre un informe técnico en PDF y los sitios de reclutamiento de cada rama, y casi nada está en español.</p>
+      <p><strong>{HOME.es.valeur}</strong></p>
+      <h2>Quién lo publica</h2>
+      <p>El sitio lo publica {AUTHOR_NAME}, una empresa que construye calculadoras a partir de datos públicos. No es un organismo público y no tiene ningún vínculo con el Departamento de Defensa, con ninguna rama de las Fuerzas Armadas ni con ningún reclutador. No vende nada, no cobra comisiones, no recoge nombres ni correos y sus páginas no llevan enlaces de afiliados.</p>
+      <LegalIdentity lang={lang} />
+      <h2>De dónde vienen las cifras</h2>
+      <p>El <Fragment set:html={s('segall', 'informe técnico de la escala de puntajes del ASVAB de 1997')} /> (tablas de conversión del AFQT y de la Fuerza Aérea, fórmulas de los Marines y del Ejército), las páginas de <Fragment set:html={s('oa-scores', 'Official ASVAB')} /> (puntajes, repeticiones, PiCAT, duración del examen), los sitios de reclutamiento del <Fragment set:html={s('army', 'Ejército')} />, de la <Fragment set:html={s('airforce', 'Fuerza Aérea')} />, de los <Fragment set:html={s('marines', 'Marines')} />, de la <Fragment set:html={s('coastguard', 'Guardia Costera')} /> y de la <Fragment set:html={s('spaceforce', 'Fuerza Espacial')} />, y el <Fragment set:html={s('usc520', '10 U.S.C. § 520')} />. La <a href={route('method', lang)}>página de método</a> da cada regla; la <a href={route('editorial', lang)}>política editorial</a> explica cómo se corrigen los errores.</p>
+      <h2>Lo que el sitio no hace</h2>
+      <p>No predice el puntaje que usted sacará, no da preguntas reales del ASVAB y no sustituye a su hoja oficial de resultados ni a un reclutador. Las preguntas de práctica las escribimos nosotros y lo decimos en cada página.</p>
+      <h2>Escríbanos</h2>
+      <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, para señalar un error o una fuente.</p>
+    </> : <>
+      <h1>About {SITE_NAMES.en}</h1>
+      <p>{AUTHOR_DESC.en}</p>
+      <h2>Why this site exists</h2>
+      <p>Someone who searches for how to convert ASVAB scores mostly finds three kinds of pages. Calculators that add scores without the conversion table and print approximate percentiles. Lists of minimums by branch copied from one site to the next, some of which contradict the branches themselves. And courses or apps that ask for an account or a payment before showing anything. The official sources are solid, but they are split between a technical report in PDF and the recruiting site of each branch.</p>
+      <p><strong>{HOME.en.valeur}</strong></p>
+      <h2>Who publishes it</h2>
+      <p>The site is published by {AUTHOR_NAME}, a company that builds calculators from public data. It is not a public body and has no link with the Department of Defense, any branch of the armed forces or any recruiter. It sells nothing, takes no commission, collects no name or email, and its pages carry no affiliate links.</p>
+      <LegalIdentity lang={lang} />
+      <h2>Where the figures come from</h2>
+      <p>The <Fragment set:html={s('segall', 'technical report of the 1997 ASVAB score scale')} /> (AFQT and Air Force conversion tables, Marine Corps and Army formulas), the pages of <Fragment set:html={s('oa-scores', 'Official ASVAB')} /> (scores, retests, PiCAT, test length), the recruiting sites of the <Fragment set:html={s('army', 'Army')} />, the <Fragment set:html={s('airforce', 'Air Force')} />, the <Fragment set:html={s('marines', 'Marine Corps')} />, the <Fragment set:html={s('coastguard', 'Coast Guard')} /> and the <Fragment set:html={s('spaceforce', 'Space Force')} />, and <Fragment set:html={s('usc520', '10 U.S.C. § 520')} />. The <a href={route('method', lang)}>method page</a> gives every rule; the <a href={route('editorial', lang)}>editorial policy</a> explains how errors are corrected.</p>
+      <h2>What the site does not do</h2>
+      <p>It does not predict the score you will get, gives no real ASVAB questions and does not replace your official score sheet or a recruiter. The practice questions are written by us, and every page that shows them says so.</p>
+      <h2>Write to us</h2>
+      <p><a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>, to report an error or a source.</p>
+    </>}
+  </article>
+</PageLayout>
