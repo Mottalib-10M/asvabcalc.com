@@ -25,9 +25,9 @@ export default defineGuide({
   sources: ['segall', 'oa-scores', 'oa-samples'],
   en: {
     slug: 'asvab-study-plan', nav: 'Study plan', card: 'Where one more point of study is worth the most',
-    title: 'ASVAB Study Plan 2026: Where Each Point Moves the AFQT Most',
+    title: 'ASVAB Study Guide 2026: A Free Plan Where Each Point Counts',
     description: 'ASVAB study plan for 2026: why Verbal Expression counts twice in the AFQT, what three more points on AR, MK or VE are worth, and when the other subtests matter.',
-    h1: 'ASVAB study plan: spend your time where the points count',
+    h1: 'ASVAB study guide: spend your time where the points count',
     intro: 'Not every subtest point is worth the same. The AFQT formula, the conversion table and your own goal decide where an hour of study pays off most.',
     resume: `For the AFQT, a point of Verbal Expression is worth twice a point of Arithmetic Reasoning or Mathematics Knowledge, because the composite is AR + MK + 2VE. Take Luis, with AR ${luis.AR}, MK ${luis.MK} and VE ${luis.VE}: his AFQT is ${luisP}. Three more points on AR lift it to ${up(luis, 'AR', 3)}, three more on MK to ${up(luis, 'MK', 3)}, but three more on VE to ${up(luis, 'VE', 3)}. VE itself is built from Word Knowledge and Paragraph Comprehension, so vocabulary and reading are the most efficient lever for the AFQT. That is not the whole plan. If your gap to the next level is in the math half, or if the job you want depends on a line score that uses General Science, Mechanical Comprehension or Electronics Information, those subtests matter too. A sound plan starts from a measured weakness, aims at a figure, either an AFQT threshold or a line score, and checks progress with timed practice.`,
     faqs: [
@@ -59,9 +59,9 @@ ${h.mini('target', { t: 'Points of sum to your target', p: ['t', 'ar', 'mk', 've
   },
   es: {
     slug: 'plan-de-estudio-asvab', nav: 'Plan de estudio', card: 'Dónde rinde más un punto de estudio',
-    title: 'Plan de estudio ASVAB 2026: dónde rinde más cada punto',
+    title: 'Guía de estudio ASVAB 2026: dónde rinde más cada punto',
     description: 'Plan de estudio del ASVAB 2026: por qué Expresión Verbal cuenta doble en el AFQT, cuánto valen tres puntos más en AR, MK o VE y cuándo pesan las demás.',
-    h1: 'Plan de estudio del ASVAB: dedique el tiempo donde cuentan los puntos',
+    h1: 'Guía de estudio del ASVAB: dedique el tiempo donde cuentan los puntos',
     intro: 'No todos los puntos valen lo mismo. La fórmula del AFQT, la tabla de conversión y su propio objetivo deciden dónde rinde más una hora de estudio.',
     resume: `Para el AFQT, un punto de Expresión Verbal vale el doble que un punto de Razonamiento Aritmético o de Conocimientos Matemáticos, porque el compuesto es AR + MK + 2VE. Tome a Luis, con AR ${luis.AR}, MK ${luis.MK} y VE ${luis.VE}: su AFQT es ${luisP}. Tres puntos más en AR lo suben a ${up(luis, 'AR', 3)}, tres más en MK a ${up(luis, 'MK', 3)}, pero tres más en VE a ${up(luis, 'VE', 3)}. VE se construye a su vez con Conocimiento de Palabras y Comprensión de Lectura, así que el vocabulario y la lectura son la palanca más eficaz para el AFQT. Eso no es todo el plan. Si la distancia al siguiente nivel está en la mitad matemática, o si el empleo que busca depende de un line score que usa Ciencia General, Comprensión Mecánica o Información Electrónica, esas subpruebas también cuentan. Un buen plan parte de una debilidad medida, apunta a una cifra, sea un umbral de AFQT o un line score, y comprueba el avance con práctica cronometrada.`,
     faqs: [

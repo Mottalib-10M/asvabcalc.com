@@ -406,6 +406,58 @@ export const SPECS: Record<string, (l: Lang, arg?: Args) => ToolSpec> = {
     },
   }),
 
+  /* Où passer l'ASVAB : MEPS, site MET, PiCAT, école ou base (Official ASVAB, Where to Take the ASVAB) */
+  where: (l) => ({
+    inputs: [
+      { kind: 'select', id: 'w', label: T(l, 'Your situation', 'Su situación'), def: 'new', wide: true, options: [
+        { value: 'new', label: T(l, 'Never took the ASVAB, want to enlist', 'Nunca hizo el ASVAB y quiere alistarse') },
+        { value: 'prior', label: T(l, 'Took it before at a MEPS or MET site', 'Ya lo hizo en un MEPS o un sitio MET') },
+        { value: 'sst', label: T(l, 'Took it at school, given by school staff', 'Lo hizo en la escuela, con el personal escolar') },
+        { value: 'cep', label: T(l, 'Student exploring careers', 'Estudiante que explora carreras') },
+        { value: 'service', label: T(l, 'Already serving, want to retest', 'Ya en servicio y quiere repetirlo') },
+      ] },
+      { kind: 'choice', id: 'm', label: T(l, 'Distance to a MEPS', 'Distancia a un MEPS'), def: 'near', options: [{ value: 'near', label: T(l, 'Close enough', 'Cerca') }, { value: 'far', label: T(l, 'Far away', 'Lejos') }] },
+      { kind: 'date', id: 'd', label: T(l, 'Date of your earlier ASVAB, if any', 'Fecha de su ASVAB anterior, si lo hizo'), def: '2026-03-12', adv: true },
+    ],
+    run: (v) => {
+      const w = s(v, 'w'), far = s(v, 'm') === 'far', d = s(v, 'd'), until = addYears(d, P.retest.validYears), left = daysBetween(LAST_UPDATED, until);
+      const site = far ? T(l, 'a MET site near you', 'un sitio MET cercano') : T(l, 'a MEPS', 'un MEPS');
+      const mode: [string, string] = [T(l, 'Format', 'Formato'), far ? T(l, 'computer at most MET sites, paper and pencil at a few', 'computadora en la mayoría de los sitios MET, papel y lápiz en unos pocos') : T(l, 'computer (CAT-ASVAB)', 'computadora (CAT-ASVAB)')];
+      const idRow: [string, string] = [T(l, 'Bring', 'Lleve'), T(l, 'a valid ID; arrive on time or you are sent back to reschedule', 'una identificación válida; llegue a tiempo o tendrá que volver otro día')];
+      const valid: [string, string] = [T(l, 'Earlier scores usable until', 'Puntajes anteriores utilizables hasta'), left >= 0 ? day(until, l) : T(l, `expired on ${day(until, l)}`, `vencidos el ${day(until, l)}`)];
+      if (w === 'new') return {
+        label: T(l, 'Where you take the ASVAB', 'Dónde hace el ASVAB'), value: far ? T(l, 'MET site, set up by a recruiter', 'Sitio MET, por medio de un reclutador') : T(l, 'MEPS, set up by a recruiter', 'MEPS, por medio de un reclutador'),
+        sub: T(l, `Or at home with the PiCAT, then a short Vtest at ${site}.`, `O en casa con el PiCAT y luego un Vtest breve en ${site}.`),
+        rows: [[T(l, 'First step', 'Primer paso'), T(l, 'contact a recruiter, who checks the rest of your file first', 'contactar a un reclutador, que revisa antes el resto de su expediente')], mode, idRow, [T(l, 'PiCAT at home', 'PiCAT en casa'), T(l, `code valid ${P.picat.codeDays} days, Vtest within ${P.picat.vtestDays} days`, `código válido ${P.picat.codeDays} días, Vtest en ${P.picat.vtestDays} días`)], [T(l, 'Scores usable for', 'Puntajes utilizables durante'), T(l, `${P.retest.validYears} years from the test date`, `${P.retest.validYears} años desde la fecha del examen`)]],
+        note: T(l, `Official ASVAB: applicants test at one of the ${P.testing.meps} MEPS in the U.S. and Puerto Rico, or at a MET site for those who live far from one.`, `Official ASVAB: los aspirantes se examinan en uno de los ${P.testing.meps} MEPS de Estados Unidos y Puerto Rico, o en un sitio MET si viven lejos de uno.`),
+      };
+      if (w === 'prior') return {
+        label: T(l, 'Where you retest', 'Dónde repite el examen'), value: far ? T(l, 'MET site, set up by a recruiter', 'Sitio MET, por medio de un reclutador') : T(l, 'MEPS, set up by a recruiter', 'MEPS, por medio de un reclutador'),
+        sub: T(l, 'The PiCAT is closed to you: it is only for people who never took the ASVAB.', 'El PiCAT no está a su alcance: es solo para quien nunca hizo el ASVAB.'),
+        rows: [valid, [T(l, 'Earliest retest', 'Primera repetición posible'), day(nextRetest(d, 1), l)], mode, idRow],
+        note: T(l, 'Official ASVAB: scores usable two years from the test date; one calendar month between the first tests, then six months.', 'Official ASVAB: puntajes utilizables dos años desde la fecha del examen; un mes calendario entre los primeros exámenes y luego seis meses.'),
+      };
+      if (w === 'sst') return {
+        label: T(l, 'What you need before enlisting', 'Lo que necesita antes de alistarse'), value: T(l, `A Vtest at ${site}`, `Un Vtest en ${site}`),
+        sub: left >= 0 ? T(l, 'School staff scores count only after a verification test, set up by a recruiter.', 'Los puntajes del personal escolar solo cuentan después de una prueba de verificación, por medio de un reclutador.') : T(l, 'Your school scores have expired: a full test at a MEPS or MET site is needed.', 'Sus puntajes escolares vencieron: hace falta un examen completo en un MEPS o un sitio MET.'),
+        rows: [valid, [T(l, 'Who schedules it', 'Quién lo programa'), T(l, 'a recruiter', 'un reclutador')], idRow],
+        note: T(l, 'Official ASVAB, Where to Take the ASVAB: scores from School Staff Testing (SST) need a Verification Test (Vtest) before they are used to enlist.', 'Official ASVAB, Where to Take the ASVAB: los puntajes de School Staff Testing (SST) necesitan una prueba de verificación (Vtest) antes de usarse para alistarse.'),
+      };
+      if (w === 'cep') return {
+        label: T(l, 'Where you take the ASVAB', 'Dónde hace el ASVAB'), value: T(l, 'At your school', 'En su escuela'),
+        sub: T(l, 'Through the ASVAB Career Exploration Program: ask a teacher or counselor.', 'Con el ASVAB Career Exploration Program: pregunte a un maestro o consejero.'),
+        rows: [[T(l, 'Open to', 'Abierto a'), T(l, 'high school and post-secondary students', 'estudiantes de secundaria y posteriores')], [T(l, 'Usable to enlist later', 'Utilizable luego para alistarse'), T(l, `within ${P.retest.validYears} years, after a Vtest if school staff gave it`, `en ${P.retest.validYears} años, tras un Vtest si lo aplicó el personal escolar`)], [T(l, 'Same content as the enlistment test', 'Mismo contenido que el examen de alistamiento'), T(l, 'yes', 'sí')]],
+        note: T(l, 'Official ASVAB: the school test is part of the Career Exploration Program; the MEPS and MET test is part of the Enlistment Testing Program.', 'Official ASVAB: el examen escolar forma parte del Career Exploration Program; el de MEPS y sitios MET, del Enlistment Testing Program.'),
+      };
+      return {
+        label: T(l, 'Where you retest', 'Dónde repite el examen'), value: T(l, 'Your base education office', 'La oficina de educación de su base'),
+        sub: T(l, 'In-service testing is run by the services, for reclassification or job training.', 'El examen en servicio lo organizan las ramas, para reclasificación o formación.'),
+        rows: [[T(l, 'Ask', 'Pregunte en'), T(l, 'the base educational office', 'la oficina educativa de la base')], [T(l, 'Recruiter needed', 'Hace falta reclutador'), T(l, 'no', 'no')]],
+        note: T(l, 'Official ASVAB, Where to Take the ASVAB: in-service testing, contact your base educational office.', 'Official ASVAB, Where to Take the ASVAB: examen en servicio, contacte la oficina educativa de su base.'),
+      };
+    },
+  }),
+
   /* Validité des scores (école ou MEPS) */
   validity: (l) => ({
     inputs: [{ kind: 'date', id: 'd', label: T(l, 'Date you took the ASVAB', 'Fecha en que hizo el ASVAB'), def: '2025-03-12' }, { kind: 'choice', id: 'w', label: T(l, 'Where', 'Dónde'), def: 'school', options: [{ value: 'school', label: T(l, 'School', 'Escuela') }, { value: 'meps', label: 'MEPS / MET' }] }],

@@ -36,6 +36,8 @@ SENTINELS = {
     'oa-retest': [r'(?i)six months|6 months', r'(?i)one (?:calendar )?month|1 (?:calendar )?month'],
     'oa-picat': [r'(?i)30 days', r'(?i)48 hours'],
     'oa-apt': [r'(?i)20 (?:items|questions)'],
+    'oa-locations': [r'(?i)Military Entrance Test \(MET\) site', r'(?i)Verification Test'],
+    'oa-expect': [r'\b65 MEPS'],
     'army': [r'\b31\b'],
     'airforce': [r'\b31\b'],
     'marines': [r'\b31\b'],

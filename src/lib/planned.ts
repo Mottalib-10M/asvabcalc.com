@@ -8,6 +8,6 @@ export const PLANNED_GUIDES = [
   // Pratique
   'practice-test', 'arithmetic-reasoning', 'word-knowledge', 'paragraph-comprehension', 'math-knowledge', 'general-science', 'electronics-information', 'auto-shop', 'mechanical-comprehension',
   // Jour du test
-  'test-length', 'cat-vs-paper', 'retest', 'picat', 'school-asvab', 'study-plan',
+  'test-length', 'cat-vs-paper', 'retest', 'picat', 'school-asvab', 'study-plan', 'testing-locations',
 ];
 export const PLANNED_IDS = new Set<string>([...PLANNED_GUIDES, 'home', 'method', 'about', 'widget', 'contact', 'editorial', 'privacy', 'terms', 'cookies']);

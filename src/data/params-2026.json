@@ -38,6 +38,20 @@
     "es": "Official ASVAB, preguntas frecuentes de los aspirantes (en inglés)"
    }
   },
+  "oa-locations": {
+   "url": "https://www.officialasvab.com/applicants/locations/",
+   "label": {
+    "en": "Official ASVAB, Where to Take the ASVAB",
+    "es": "Official ASVAB, dónde hacer el ASVAB (en inglés)"
+   }
+  },
+  "oa-expect": {
+   "url": "https://www.officialasvab.com/applicants/what-to-expect/",
+   "label": {
+    "en": "Official ASVAB, What to Expect When You Take the ASVAB",
+    "es": "Official ASVAB, qué esperar el día del ASVAB (en inglés)"
+   }
+  },
   "oa-retest": {
    "url": "https://www.officialasvab.com/recruiters/asvab-retest-policy/",
    "label": {
@@ -335,6 +349,9 @@
    2,
    3
   ]
+ },
+ "testing": {
+  "meps": 65
  },
  "apt": {
   "items": 20,
