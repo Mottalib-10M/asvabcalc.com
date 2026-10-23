@@ -9,10 +9,10 @@ const { lang } = Astro.props;
 const es = lang === 'es';
 const path = route('contact', lang);
 const description = es
-  ? 'Escriba al editor de Puntaje para Alistarse sobre una cifra del ASVAB 2026, un mínimo de rama o una fuente. Solo por correo: sin formulario, sin cuenta y sin reclutadores.'
-  : 'Write to the publisher of Score to Enlist about a 2026 ASVAB figure, a branch minimum or a source. Email only: no form, no account, and nothing passed on to recruiters.';
+  ? 'Escriba al editor de ASVAB Calc sobre una cifra del ASVAB 2026, un mínimo de rama o una fuente. Solo por correo: sin formulario, sin cuenta y sin reclutadores.'
+  : 'Write to the publisher of ASVAB Calc about a 2026 ASVAB figure, a branch minimum or a source. Email only: no form, no account, and nothing passed on to recruiters.';
 ---
-<PageLayout title={es ? 'Contacto de Puntaje para Alistarse 2026: correcciones' : 'Contact Score to Enlist 2026: corrections and sources'} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: es ? 'Contacto' : 'Contact', description, path, lang })]} breadcrumbs={[{ label: es ? 'Contacto' : 'Contact' }]} showAuthor={false}>
+<PageLayout title={es ? 'Contacto de ASVAB Calc 2026: correcciones' : 'Contact ASVAB Calc 2026: corrections and sources'} description={description} lang={lang} noindex={true} jsonLd={[contactPageSchema({ name: es ? 'Contacto' : 'Contact', description, path, lang })]} breadcrumbs={[{ label: es ? 'Contacto' : 'Contact' }]} showAuthor={false}>
   <div class="prose prose-slate max-w-none">
     {es ? <>
       <h1>Contacto</h1>

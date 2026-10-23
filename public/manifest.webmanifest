@@ -1,6 +1,6 @@
 {
- "name": "Score to Enlist",
- "short_name": "Score to Enlist",
+ "name": "ASVAB Calc",
+ "short_name": "ASVAB Calc",
  "description": "ASVAB scores in 2026: AFQT percentile from your standard scores, service minimums, Air Force MAGE and line scores, retest dates and practice questions.",
  "start_url": "/en/",
  "display": "standalone",

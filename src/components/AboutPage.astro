@@ -12,10 +12,10 @@ const { lang } = Astro.props;
 const es = lang === 'es';
 const path = route('about', lang);
 const s = (k: string, t: string) => srcLink(k, lang, t);
-const title = es ? 'Puntaje para Alistarse 2026: quién lo publica y por qué' : 'Score to Enlist 2026: who publishes it and why it exists';
+const title = es ? 'ASVAB Calc 2026: quién lo publica y por qué' : 'ASVAB Calc 2026: who publishes it and why it exists';
 const description = es
-  ? 'Puntaje para Alistarse lo publica Radif Partners: el ASVAB 2026 convertido con las tablas oficiales de 1997, sin formulario, sin afiliados y sin cuenta.'
-  : 'Score to Enlist is published by Radif Partners: 2026 ASVAB scores converted with the official 1997 tables, with no form, no affiliate link and no account.';
+  ? 'ASVAB Calc lo publica Radif Partners: el ASVAB 2026 convertido con las tablas oficiales de 1997, sin formulario, sin afiliados y sin cuenta.'
+  : 'ASVAB Calc is published by Radif Partners: 2026 ASVAB scores converted with the official 1997 tables, with no form, no affiliate link and no account.';
 const crumb = es ? 'Quiénes somos' : 'About';
 ---
 <PageLayout title={title} description={description} lang={lang} jsonLd={[profilePageSchema({ path, lang }), breadcrumbSchema([{ name: es ? 'Inicio' : 'Home', path: route('home', lang) }, { name: crumb, path }])]} breadcrumbs={[{ label: crumb }]}>

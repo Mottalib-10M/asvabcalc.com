@@ -1,6 +1,6 @@
 /** Configuration centrale du site (générée par new-site.py). */
-export const SITE_URL = "https://us-asvab.example";
-export const SITE_NAMES: Record<string, string> = {"en": "Score to Enlist", "es": "Puntaje para Alistarse"};
+export const SITE_URL = "https://asvabcalc.com";
+export const SITE_NAMES: Record<string, string> = {"en": "ASVAB Calc", "es": "ASVAB Calc"};
 export const LANG_TAGS: Record<string, string> = {"en": "en-US", "es": "es-US"};
 export const OG_LOCALES: Record<string, string> = {"en": "en_US", "es": "es_US"};
 export const LOCALE_TAG = 'en-US';
@@ -16,7 +16,7 @@ export const AUTHOR_DESC: Record<string, string> = {"en": "Radif Partners turns 
  *  themes reellement traites par le site, pas une liste de mots-cles : un sujet
  *  declare ici sans page qui le couvre est une declaration fausse. */
 export const KNOWS_ABOUT: Record<string, string[]> = {"en": ["ASVAB standard scores and the 1997 score scale", "AFQT percentile scores and categories", "Air Force MAGE composite percentiles", "Army and Marine Corps line scores", "ASVAB retest policy and PiCAT", "ASVAB subtest content"], "es": ["Puntajes estándar del ASVAB y la escala de 1997", "Percentiles y categorías del AFQT", "Percentiles compuestos MAGE de la Fuerza Aérea", "Line scores del Ejército y de los Marines", "Política de repetición del ASVAB y PiCAT", "Contenido de las subpruebas del ASVAB"]};
-export const CONTACT_EMAIL = "contact@us-asvab.example";
+export const CONTACT_EMAIL = "contact@asvabcalc.com";
 export const THEME_COLOR = '#3F5A24';
 export const LOGO_SYMBOL = 'QT';
 export const BING_VERIFY_CODE = '';
